@@ -18,6 +18,8 @@ def choice()
         puts @list
     when 2
         puts "Please add song"
+        @list << gets.to_s
+        menu
     when 3
         puts "What song do you want to remove?"
     end

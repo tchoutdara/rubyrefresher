@@ -5,6 +5,7 @@ def menu()
     puts "1) View all music"
     puts "2) Add Song"
     puts "3) Remove Song"
+    puts "4) Exit"
     
     @user_choice = gets.to_i
     puts @user_choice
@@ -22,7 +23,11 @@ def choice()
         menu
     when 3
         puts "What song do you want to remove?"
+    when 4
+        put "Good Bye!"
+        exit
     end
+
     menu
 end
 

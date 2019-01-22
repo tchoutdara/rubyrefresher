@@ -4,6 +4,7 @@ def menu
     puts "2) Add Song"
     puts "3) Remove Song"
     puts "4) Exit"
+    puts "**********************"
     
     @user_choice = gets.to_i
     puts @user_choice

@@ -21,9 +21,10 @@ def choice
         menu
     when 3
         puts "What song do you want to remove?"
-        when 4
-            puts "Good Bye!"
-            exit
+        delete
+    when 4
+        puts "Good Bye!"
+        exit
     end
 end
         
@@ -33,6 +34,15 @@ def index
     @list.each_with_index.map do |name, i|
         puts "#{i + 1}) #{name}"
     end
+    menu
+end
+
+def delete
+    @list.each_with_index.map do |name, i|
+        puts "#{i + 1}) #{name}"
+    end
+    choice2 = gets.to_i - 1
+    @list.delete_at(choice2)
     menu
 end
 

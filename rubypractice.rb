@@ -1,4 +1,4 @@
-def menu()
+def menu
     puts "****Song List Menu****"
     puts "1) View all music"
     puts "2) Add Song"

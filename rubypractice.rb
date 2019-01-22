@@ -24,9 +24,14 @@ def choice()
     when 3
         puts "What song do you want to remove?"
     when 4
-        put "Good Bye!"
+        puts "Good Bye!"
         exit
     end
+
+def add_music()
+    puts"****Please Add A Song****"
+    @list << gets.to_i 
+end
 
     menu
 end

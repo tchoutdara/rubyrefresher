@@ -19,7 +19,7 @@ def choice
         puts index
     when 2
         puts "****Please Add A Song****"
-        add_music
+        add
     when 3
         puts "****What song would you like to edit?****"
     when 4
@@ -53,9 +53,18 @@ def delete
     menu
 end
 
-def add_music
+def add
     @list << gets.to_s
     puts "****Song Added!****"
+end
+
+def edit
+    puts inde
+    edit_song =gets.to_i - 1
+    puts @list[edit_song]
+    @lists.insert(edit_song, gets)
+    @list.delete_at(edit_song + 1)
+    menu
 end
 
 

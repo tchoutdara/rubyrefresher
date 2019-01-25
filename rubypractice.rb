@@ -45,6 +45,7 @@ def delete
     end
     choice2 = gets.to_i - 1
     @list.delete_at(choice2)
+    puts "****Song Removed****"
     menu
 end
 

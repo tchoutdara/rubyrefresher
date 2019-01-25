@@ -56,10 +56,11 @@ end
 def add
     @list << gets.to_s
     puts "****Song Added!****"
+    menu
 end
 
 def edit
-    puts inde
+    puts index
     edit_song =gets.to_i - 1
     puts @list[edit_song]
     @lists.insert(edit_song, gets)

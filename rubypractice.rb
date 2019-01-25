@@ -17,15 +17,16 @@ def choice
         puts "Here are your Songs!"
         puts index
     when 2
-        puts "Please add song"
-        @list << gets.to_s
-        menu
+        add_music
     when 3
         puts "What song do you want to remove?"
         delete
     when 4
         puts "Good Bye!"
         exit
+    else
+        puts "Invalid Choice, Choose again"
+        menu
     end
 end
         

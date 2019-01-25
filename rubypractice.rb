@@ -22,6 +22,7 @@ def choice
         add
     when 3
         puts "****What song would you like to edit?****"
+        edit
     when 4
         puts "****What song do you want to remove?****"
         delete
@@ -60,10 +61,12 @@ def add
 end
 
 def edit
-    puts index
+    @list.each_with_index.map do |name, i|
+        puts "#{i + 1}) #{name}"
+    end
     edit_song =gets.to_i - 1
     puts @list[edit_song]
-    @lists.insert(edit_song, gets)
+    @list.insert(edit_song, gets)
     @list.delete_at(edit_song + 1)
     menu
 end

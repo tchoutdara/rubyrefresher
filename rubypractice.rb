@@ -48,8 +48,9 @@ def delete
 end
 
 def add_music
-    puts"****Please Add A Song****"
+    puts "****Please Add A Song****"
     @list << gets.to_s
+    puts "****Song Added!****"
 end
 
 
